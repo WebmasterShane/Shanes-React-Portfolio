@@ -21,7 +21,7 @@ function Navbar() {
                                <Link className="nav-link" to="/portfolio">Portfolio</Link>
                            </li>
                            <li className="nav-item active">
-                               <Link className="nav-link" to="/Shanes-React-Portfolio">About Me</Link>
+                               <Link className="nav-link" to="/">About Me</Link>
                            </li>
                            <li className="nav-item active">
                             <a className="nav-link" href="/Assets/Shane_Webber_Resume.PDF" download>Resume Downlaod</a>

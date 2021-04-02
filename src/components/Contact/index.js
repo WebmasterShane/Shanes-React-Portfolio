@@ -1,10 +1,61 @@
 import React from "react";
+import { useForm, ValidationError } from '@formspree/react';
 
 
-const Contact = () =>{
+function Contact(){
+    const [state, handleSubmit] = useForm("mbjqjjzq");
+    if (state.succeeded) {
+        return(
+            <div> <p>Thanks for joining!</p>
+            <div className="col-md text-left aboutme text-center" id="stroke">
+        <ul className="list-unstyled mb-0">
+            <li className="fas fa-map-marker-alt fa-2x">
+                <p className="contactsize">San Diego, CA 92105, USA</p>
+            </li>
+
+            <li><i className="fas fa-phone mt-4 fa-2x"></i>
+                <p className="contactsize">978-551-2148</p>
+            </li>
+
+            <li><i className="fas fa-envelope mt-4 fa-2x"></i>
+                <p className="contactsize">Shanelwebber@gmail.com</p>
+            </li>
+        </ul>
+    </div>
+     </div>
+    )
+    }
     return(
+        <div>
+        {/* <form onSubmit={handleSubmit} action="https://formspree.io/f/moqyqqke" method="POST">
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        id="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
         <div className="body">
-        <section>
+        <section> */}
 
 <h2 className="h1-responsive font-weight-bold text-left aboutme my-4">Contact us</h2>
 
@@ -12,7 +63,7 @@ const Contact = () =>{
 <div className="row">
 
     <div className="col-md-6 mb-md-0 mb-6">
-        <form id="contact-form" name="contact-form" action="" method="">
+        <form onSubmit={handleSubmit}>
 
 
             <div className="row">
@@ -46,13 +97,13 @@ const Contact = () =>{
 
                 </div>
             </div>
-
+            <div className="text-center text-md-left">
+            <button type="submit" className="btn btn-danger">Send</button>
+        </div>
 
         </form>
 
-        <div className="text-center text-md-left">
-            <button type="submit" className="btn btn-danger">Send</button>
-        </div>
+        
         <div className="status"></div>
     </div>
 
@@ -75,9 +126,9 @@ const Contact = () =>{
 
 </div>
 
-</section>
         
         </div>
+      
     );
 }
 

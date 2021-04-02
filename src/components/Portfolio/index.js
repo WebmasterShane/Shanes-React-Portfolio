@@ -15,10 +15,11 @@ import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     container:{
-        marginTop: "10%",
+        marginTop: "5%",
         paddingBottom: "10%"
 
     },
@@ -32,6 +33,11 @@ const useStyles = makeStyles({
         color: "#ffffff",
         width: "50%",
 
+    },
+    subHeads:{
+        color: "#ffffff",
+        marginBottom: "3%",
+        marginTop: "3%",
     }
   
   });
@@ -41,8 +47,11 @@ function Portfolio() {
     const classes = useStyles()
     return(
         <Container className={classes.container}>
-              
+            <Grid container justify="center" alignItems="center">
+              <Typography item className={classes.subHeads} variant="h2">Web Development</Typography>
+              </Grid>
             <Grid justify="center" container spacing={3}>
+                
             <Grid  item xs={4}>
                 <img className="img-fluid" src={Cryptic} alt="Cryptic Home Page"></img>
                 <Grid row>
@@ -63,17 +72,14 @@ function Portfolio() {
                 <Button variant="outlined"className={classes.githubBtn} color="secondary" href="https://github.com/larrygamboa/laughing-saves-the-day">GitHub</Button>
                 <Button variant="outlined"className={classes.linkBtn} color="primary" href="https://larrygamboa.github.io/laughing-saves-the-day/">LSD</Button>
                 </Grid>
-                </Grid>
-                
-                <Grid item xs={4}>
-                <img className="img-fluid" src={img1} alt="House2Ourselves logo"></img>
-                </Grid>
-                <Grid item xs={4}>
-                <img className="img-fluid" src={img2} alt="House2Ourselves logo"></img>
-                </Grid>
-                <Grid item xs={4}>
-                <img className="img-fluid" src={img3} alt="House2Ourselves logo"></img>
-                </Grid>
+            </Grid>
+            <Grid container justify="center" alignItems="center">
+              <Typography item className={classes.subHeads} variant="h2">Post Script</Typography>
+              </Grid>
+               <Grid>
+                  
+                   </Grid> 
+               
                 <Grid item xs={4}>
                 <img className="img-fluid" src={img4} alt="House2Ourselves logo"></img>
                 </Grid>
