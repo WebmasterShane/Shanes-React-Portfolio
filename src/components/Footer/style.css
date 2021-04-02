@@ -1,0 +1,52 @@
+
+
+body {
+    background-color: black;
+}
+
+section {
+    margin-top: 20px;
+    background-image: url(../images/background1.jpeg);
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+    border-color: white;
+    
+}
+
+img {
+    margin-left: -25px;
+
+
+}
+
+.aboutme {
+    color: whitesmoke;
+}
+
+.span2 {
+    font-size: x-large;
+}
+
+.textcolor {
+    color: white;
+}
+
+
+p {
+    font-size: larger;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+h3{
+    font-size: small;
+}
+
+.contactsize {
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+}
+
