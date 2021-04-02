@@ -12,7 +12,7 @@ const Contact = () =>{
 <div className="row">
 
     <div className="col-md-6 mb-md-0 mb-6">
-        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        <form id="contact-form" name="contact-form" action="" method="">
 
 
             <div className="row">
@@ -51,7 +51,7 @@ const Contact = () =>{
         </form>
 
         <div className="text-center text-md-left">
-            <button className="btn btn-danger">Send</button>
+            <button type="submit" className="btn btn-danger">Send</button>
         </div>
         <div className="status"></div>
     </div>
